@@ -1,0 +1,14 @@
+language: node_js
+node_js: node
+cache:
+  directories:
+  - node_modules
+env:
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: qeszWM4BU2QNIQ0FKuCxvR6HuwaQ762H9HJ51LzgsB9XyPekoRA+SabnFANup0Ni/x/yzypnJl7JXnrtnvgySg6DfapHZ7Kj5pCyO/LaUxqtwoCZ4JTqumVPMvO6N38SX02trbvtVcf4TZgasOZLE5zRWQw31fdSKZiqRSMT3ces0kKTx/lj1RbLTRx1rW6iIC0VMkZcuebAlY0NZYjuVOj5xc4eAZ2IL0D3DWuznTfVBeaWfDXGbnxbX8GRAtn1Esa05fb9WKkyAlAJosypCpyOZ2Nh/Qwge5kScLqm08XSx2NZHb9EqQcz3KSSrwyul0QCUEFLuqHi9LdMevAUwlNAra/xpFnLSlSjQRDwONlwhyBYmarkOKKD/3Tqm+Aov8cuhnQwk0eXsyCVBEpJrOXN7DvEa6WDe5dibxTijnDtg+ymvUP31QfhsAs4Gwxs4eLfy0WOr+E0YPY70XZ7QXaBWElNAkesnbbbpKcC/GzEpegiw9OGxEAAXh5gwr2vbvV9RE0BVJDd9BglVAd586N3b9CWSbRapgjAE6H636EHgjtNJWWOg/wYHNtzgWZB4xDAvhdOlWCl5aZVsda4ckQl8ZIvxv3oL8cQKZFVQxTH4pQsZFJo0xP2yn8CUn9Ltr6pnpIsL56lWhKGjYBbKA7NxH42GaKMHOuZAJ+VuJI=
+  app: react-hot-cold-testing7515
+  on:
+    repo: anthonyphoto/react-hot-cold-testing
